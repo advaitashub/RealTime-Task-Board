@@ -10,8 +10,6 @@ const { env } = require("./config/environment");
 const app = express();
 
 const allowedOrigins = ["http://localhost:3000", env.CLIENT_URL];
-  
-
 
 app.use(
   cors({
@@ -48,6 +46,12 @@ app.use("/api/auth", authRoutes);
 app.use("/api/boards", boardRoutes);
 app.use("/api", taskRoutes);
 app.use("/api", activityRoutes);
+app.get("/", (req, res) => {
+  res.status(200).json({
+    success: true,
+    message: "Real-Time Task Board API is running",
+  });
+});
 
 app.use(notFound);
 app.use(errorHandler);
