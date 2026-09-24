@@ -9,9 +9,9 @@ const { env } = require("./config/environment");
 
 const app = express();
 
-const allowedOrigins = ["http://localhost:3000", env.CLIENT_URL].filter(
-  Boolean,
-);
+const allowedOrigins = ["http://localhost:3000", env.CLIENT_URL];
+  
+
 
 app.use(
   cors({
