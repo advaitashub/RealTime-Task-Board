@@ -2,7 +2,7 @@
 
 A full-stack collaborative task management application where authenticated users can create boards, manage tasks, and collaborate with other board members in real time.
 
-The project is built with **Next.js, React, Node.js, Express.js, MongoDB, and Socket.IO**.
+The project is built with **React, Node.js, Express.js, MongoDB, and Socket.IO**.
 
 ## Features
 
@@ -405,15 +405,6 @@ MONGODB_URI=your_mongodb_connection_string
 ```
 
 ---
-
-## Testing
-
-Backend tests can be run with:
-
-```bash
-cd backend
-npm test
-```
 
 The test suite covers areas such as:
 
